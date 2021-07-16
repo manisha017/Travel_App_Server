@@ -39,13 +39,6 @@ app.use('/api/product', require('./routes/product'));
 //https://stackoverflow.com/questions/48914987/send-image-path-from-node-js-express-server-to-react-client
 app.use('/uploads', express.static('uploads'));
 
- // Set static folder
- app.use(express.static("client/build"));
-
- // index.html for all page routes
- app.get("*", (req, res) => {
-   res.sendFile(path.resolve(__dirname, "../client", "build", "index.html"));
- });
 
 app.listen(port, () => {
   console.log(`Server Running at ${port}`)
