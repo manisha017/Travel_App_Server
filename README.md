@@ -1,4 +1,3 @@
-
 To use this application,follow these steps -->
 
 1. make dev.js file inside config folder 
